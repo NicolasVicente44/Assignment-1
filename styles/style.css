@@ -1,0 +1,379 @@
+/* Set some basic styles for the whole page */
+body {
+	font-family: Arial, Helvetica, serif;
+	color: #333;
+	background-color: #f4f4f4;
+}
+
+/* Center the page content */
+.page-wrapper {
+	max-width: 60vw;
+	margin: 0 auto;
+}
+
+/* Style the header */
+header {
+	text-align: center;
+	margin-bottom: 2rem;
+	animation: fade-in 2s ease-in-out;
+}
+
+/*header animation*/
+@keyframes fade-in {
+	from {
+		opacity: .3;
+		padding: 17vw 5vw 17vw 5vw;
+	}
+
+	to {
+		opacity: 1.3;
+		padding: 20vw 0vw 20vw 0vw;
+
+	}
+}
+
+/*attribute selector*/
+a[title] {
+	color: #181818
+}
+
+
+/* Style the intro section */
+
+header h1 {
+	font-size: 4rem;
+	margin-bottom: 1rem;
+	text-shadow: 3px 5px 5px #bd8f8f;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header h2 {
+	font-size: 1.5rem;
+	font-style: italic;
+	margin-top: 0;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.intro {
+	background-color: #f1f2f6;
+	padding: 2rem;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 05);
+}
+
+.intro p {
+	margin-bottom: 1.5rem;
+}
+
+header {
+	background-image: url(https://images.unsplash.com/photo-1527903789995-dc8ad2ad6de0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1120&q=80);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	padding: 20vw 0vw 20vw 0vw;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	filter: brightness(1.1);
+}
+
+.summary {
+	font-style: italic;
+	font-size: 1.5em;
+}
+
+/* Style the "Road to Enlightenment" section */
+.preamble {
+	margin-top: 3rem;
+	padding: 1.5rem;
+	background-color: #f9f9f9;
+	border-top: 1rem solid #bd8f8f;
+	font-size: 1.5em;
+	line-height: 1.5em;
+}
+
+.preamble>h3 {
+	background-color: #f1f2f6;
+	padding: 1em;
+	color: #181818;
+	border-radius: 0.4em;
+	text-shadow: 1px 1px 2px #bd8f8f;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+/*main area styling*/
+.main-supporting {
+	background-color: #f1f2f6;
+	padding: 2rem;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 05);
+	margin-top: 4em;
+}
+
+/* Style the "What is this about?" section */
+.explanation {
+	margin-top: 3rem;
+	padding: 1.5rem;
+	background-color: #f9f9f9;
+	border-left: 1rem solid #eccc68;
+	border-right: 1rem solid #eccc68;
+	font-size: 1.5em;
+	line-height: 1.5em;
+}
+
+.explanation>h3 {
+	background-color: #f1f2f6;
+	padding: 1em;
+	color: #181818;
+	border-radius: 0.4em;
+	text-shadow: 1px 1px 2px #eccc68;
+}
+
+/*participation section styling*/
+.participation {
+	margin-top: 3rem;
+	padding: 1.5rem;
+	background-color: #f9f9f9;
+	border-left: 1rem solid rgb(54, 161, 135);
+	border-right: 1rem solid rgb(54, 161, 135);
+	font-size: 1.5em;
+	line-height: 1.5em;
+}
+
+.participation>h3 {
+	background-color: #f1f2f6;
+	padding: 1em;
+	color: #181818;
+	border-radius: 0.4em;
+	text-shadow: 1px 1px 2px rgb(54, 161, 135)
+}
+
+/*benefits area styling*/
+
+.benefits {
+	background-color: #f5f5f5;
+	padding: 3em;
+	transition: all 1.5s;
+	font-size: 1.5em;
+	line-height: 1.5em;
+	margin-top: 3em;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.benefits:hover {
+	background-color: #bd8f8f;
+}
+
+.benefits h2 {
+	font-size: 36px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.benefits .benefit-item {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 30px;
+	padding: 30px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.benefits .benefit-item:hover {
+	transform: translateY(-10px);
+	transition: all 0.3s ease-in-out;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.benefits .benefit-item .benefit-icon {
+	font-size: 60px;
+	margin-right: 20px;
+	color: #ff6b6b;
+}
+
+.benefits .benefit-item h3 {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	color: #333;
+}
+
+.benefits .benefit-item p {
+	font-size: 18px;
+	color: #777;
+	line-height: 1.5;
+}
+
+/*requirements area styling*/
+
+.requirements {
+	background-color: #f5f5f5;
+	padding: 3em;
+	transition: all 1.5s;
+	font-size: 1.5em;
+	line-height: 1.5em;
+	margin-top: 3em;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.requirements:hover {
+	background-color: #bd8f8f;
+}
+
+.requirements h2 {
+	font-size: 36px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.requirements .requirement-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.requirements .requirement-item .requirement-icon {
+	font-size: 60px;
+	margin-bottom: 20px;
+	color: #ff6b6b;
+}
+
+.requirements .requirement-item h3 {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	color: #333;
+	text-align: center;
+}
+
+.requirements .requirement-item p {
+	font-size: 18px;
+	color: #777;
+	text-align: center;
+	line-height: 1.5;
+}
+
+
+/* Styling of links */
+a {
+	color: black;
+	text-decoration: none;
+	border-bottom: 2px solid black;
+	font-weight: bold;
+	transition: color 0.5s;
+}
+
+a:hover {
+	color: rgb(133, 122, 106);
+	border-bottom: 0px solid;
+}
+
+/* Styling of the footer */
+footer {
+	text-align: center;
+	margin-top: 3rem;
+	padding: 1.5rem;
+	background-color: #eee;
+	padding: 5em;
+	border-top: black 1em solid;
+	font-size: 1.2em;
+}
+
+footer>a {
+	border: #181818;
+	border-radius: 2em;
+	border: #181818 solid 0.2em;
+	padding: 1vw;
+	margin-right: 2em;
+	margin-left: 2em;
+	transition: border-bottom 1s;
+	transition: border-left 1s;
+}
+
+footer>a::content {
+	background-color: #bd8f8f;
+}
+
+footer a::before {
+	content: "\2022";
+	margin-right: 5px;
+}
+
+footer>a:hover {
+	background-color: #bd8f8f;
+	border: #181818;
+	border-radius: 2em;
+	border: #181818 solid 0.2em;
+	border-bottom: black solid 0.5em;
+	border-left: black solid 0.5em;
+}
+
+/*sidebar/aside styling*/
+
+.sidebar {
+	line-height: 3.3em;
+}
+
+.design-selection {
+	font-size: 2em;
+	display: flex;
+	justify-content: flex-start;
+	background-color: #f1f2f6;
+	padding: 1em;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 05);
+	margin-top: 2em;
+	max-width: 60vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.design-selection li a:nth-child(odd) {
+	color: #181818;
+}
+
+
+.design-selection li a:nth-child(even) {
+	color: #777;
+}
+
+
+.design-archives {
+	font-size: 2em;
+	display: flex;
+	justify-content: flex-start;
+	background-color: #f1f2f6;
+	padding: 1em;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 05);
+	margin-top: 2em;
+	max-width: 60vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.zen-resources {
+	font-size: 2em;
+	display: flex;
+	justify-content: flex-start;
+	background-color: #f1f2f6;
+	padding: 1em;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 05);
+	margin-top: 2em;
+	max-width: 60vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 2em;
+}
